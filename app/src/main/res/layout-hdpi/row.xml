@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chatters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/user"
+            android:padding="2dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/chatterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200sp"
+            android:layout_marginTop="40sp"
+            android:text="Arbaz Daha"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220sp"
+            android:layout_marginTop="100sp"
+            android:text="Tap to chat"
+            android:maxWidth="150dp"
+            android:textSize="30dp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/lastMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time"
+            android:layout_marginLeft="770sp"
+            android:layout_marginTop="30sp"
+            android:text="11:11 AM"
+            android:textSize="24dp"
+            android:visibility="gone"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

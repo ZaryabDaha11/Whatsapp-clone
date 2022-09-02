@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WhatsApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_main</item>
+        <item name="colorPrimaryDark">@color/main_main</item>
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

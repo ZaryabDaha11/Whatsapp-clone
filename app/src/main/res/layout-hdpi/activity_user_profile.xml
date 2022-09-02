@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ooooprofile" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/addProfilePic"
+        android:src="@drawable/plus"
+        android:layout_alignEnd="@id/userImg"
+        android:layout_alignBottom="@id/userImg"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/userImg"
+    android:layout_marginTop="90dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namecard"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nameImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ooooprofile"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="28dp"
+            android:maxLines="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pencil"
+            android:id="@+id/changeName"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="75dp"
+            />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is not your username or pin. This name will be visible to your WhatsApp contacts"
+            android:textSize="28dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="40dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/grey"
+        android:layout_below="@id/namecard"
+        />
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutcard">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/aboutImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/informationn"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/about2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="160dp"
+            android:textSize="28dp"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey there! I am using WhatsApp."
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/grey"
+        android:layout_below="@id/aboutcard"
+        />
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/phoneImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/phonecall"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/phone2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Phone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="160dp"
+            android:textSize="28dp"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+92 012 3456789"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</RelativeLayout>

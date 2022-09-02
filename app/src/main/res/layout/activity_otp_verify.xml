@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpVerify"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Verify +92 301 2345678"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/MessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70sp"
+        android:text="Enter the OTP code to verify your number"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/OtpBox"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MessageText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint=" - - -  - - -"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/OtpBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:background="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20sp"
+        android:text="Enter 6-digit code"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/OtpBox"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/otpVerifyButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OtpBox"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#26DC56"
+        android:text="verify"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

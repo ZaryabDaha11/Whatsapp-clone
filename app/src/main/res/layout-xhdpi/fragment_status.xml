@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/statusCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mystatus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ooooprofile" />
+
+        <ImageView
+            android:id="@+id/addstatusImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_alignEnd="@id/mystatus"
+            android:layout_alignBottom="@id/mystatus"
+            android:src="@drawable/plus"
+            />
+
+        <TextView
+            android:id="@+id/myStausTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="My status"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/statusTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to add status update"
+            android:textSize="14dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginBottom="15dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent updates"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:background="#E8E2E2"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/statusRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
+
+</FrameLayout>

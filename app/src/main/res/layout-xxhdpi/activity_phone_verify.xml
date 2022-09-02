@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerify"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/VerifyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="20sp"
+        android:text="Enter your phone number"
+        android:textAlignment="gravity"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/MessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:padding="5dp"
+        android:text="WhatsApp will send an SMS message to verify your phone number."
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/countryCode"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MessageText"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="55dp"
+        android:hint="+1"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MessageText"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:hint="phone number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneNumber"
+        android:layout_marginTop="15sp"
+        android:padding="5dp"
+        android:text="Carrier SMS charges may apply"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/sendOTPButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/PhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#26DC56"
+        android:gravity="center"
+        android:text="next"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/PhoneNumber"
+        android:layout_marginLeft="50dp"
+        android:background="@color/teal_700" />
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/PhoneNumber"
+        android:layout_marginLeft="160dp"
+        android:background="@color/teal_700" />
+
+
+</RelativeLayout>
